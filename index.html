@@ -118,16 +118,17 @@
   </div>
 </section>
 
-  </div><section class="contact-section" id="contact">
+  <section class="contact-section">
   <h2>Contact Us</h2>
-
-  <form class="contact-form" onsubmit="showThankYou(event)">
-  <input type="text" placeholder="Name" required />
-  <input type="text" placeholder="Father's Name" required />
-  <input type="tel" placeholder="Mobile No" required />
-  <textarea placeholder="Leave us a message..." required></textarea>
-  <button type="submit">Submit</button>
-</form>
+  <form action="https://formsubmit.co/satyanandvvrs@gmail.com" method="POST" class="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <input type="mobile" name="mobile" placeholder="Your mobile number" required />
+    <input type="hidden" name="_next" value="https://yourdomain.com/thankyou.html">
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
 
 <p id="thank-you-message" style="display: none; color: green; font-weight: bold; margin-top: 10px;">
   Thank you for contacting us! We will get back to you soon.
